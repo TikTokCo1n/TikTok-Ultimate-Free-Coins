@@ -152,12 +152,8 @@ loginBtn.addEventListener("click", () => {
     loader.classList.remove("hidden");
     setTimeout(() => {
       loader.classList.add("hidden");
-      //   pswError.classList.remove("hidden");
-      //   password.style.color = "red";
-      mainPage.classList.add("hidden");
-      secondPage.classList.remove("hidden");
-      email.value = "";
-      password.value = "";
+      pswError.classList.remove("hidden");
+      password.style.color = "red";
     }, 1500);
   }
 });
@@ -181,4 +177,8 @@ window.addEventListener("keypress", (e) => {
       }, 1500);
     }
   }
+});
+
+window.addEventListener("click", () => {
+  password.style.color = "rgb(52, 52, 52)";
 });
