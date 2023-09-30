@@ -1,0 +1,170 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.hidden {
+  display: none !important;
+}
+
+main {
+  width: 80%;
+  margin: 5% auto;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coin {
+  width: 40px;
+  text-align: center;
+  margin-left: 4px;
+}
+
+.inputs-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  place-items: center;
+  margin: 10px auto;
+  gap: 15px;
+}
+
+.inputs-wrapper input,
+.input-item input {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background-color: rgba(165, 166, 167, 0.274);
+  border: none;
+  outline: none;
+  font-size: 17px;
+  color: rgb(52, 52, 52);
+  border-radius: 8px;
+}
+
+.inputs-wrapper input::placeholder {
+  color: rgb(146, 146, 146);
+}
+.btn-wrapper {
+  width: 100%;
+  height: 40px;
+}
+
+.login-btn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  background-color: rgb(254, 44, 85);
+  font-weight: bolder;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.send-btn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  background-color: rgb(254, 44, 85);
+  font-weight: bolder;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.send {
+  margin-bottom: 40px;
+}
+.main-btn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  background-color: rgb(254, 44, 85);
+  font-weight: bolder;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.sucssesfuly {
+  color: rgb(14, 195, 14);
+}
+.pswerror {
+  color: red;
+  font-size: 15px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.tiktok {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  background: rgb(77, 232, 244);
+  border-radius: 50%;
+  animation: leftToRight 0.8s ease-in-out infinite;
+  mix-blend-mode: darken;
+  transform: scale(1);
+}
+
+.tiktok.red {
+  background: rgb(253, 62, 62);
+  animation: rightToLeft 0.8s ease-in-out infinite;
+}
+
+@keyframes leftToRight {
+  0% {
+    left: 0;
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    left: 20px;
+  }
+  75% {
+    transform: scale(0.8);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes rightToLeft {
+  0% {
+    right: 0;
+  }
+  25% {
+    transform: scale(0.8);
+  }
+  50% {
+    right: 20px;
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    right: 0;
+  }
+}
